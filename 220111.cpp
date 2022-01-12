@@ -94,3 +94,18 @@ int bestProfit(int mStock)
 {
     return 0;
 }
+
+using namespace std;
+int main()
+{
+    setbuf(stdout, NULL);
+    //freopen("sample_input.txt", "r", stdin);
+    int T, MARK;
+    scanf("%d %d", &T, &MARK);
+
+    for (int tc = 1; tc <= T; tc++)
+    {
+        int score = run() ? MARK : 0;
+        printf("#%d %d\n", tc, score);
+    }    return 0;
+}
